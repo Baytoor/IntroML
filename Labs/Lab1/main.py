@@ -17,8 +17,8 @@ def check_toy_data(toy_data, toy_labels):
 
 if __name__ == '__main__':
     # Load reviews data
-    reviews_data = lab1.load_reviews_data('../../Data/reviews_train.csv')
-    check_reviews_data(reviews_data)
+    # reviews_data = lab1.load_reviews_data('../../Data/reviews_train.csv')
+    # check_reviews_data(reviews_data)
     print('Reviews data loaded correctly')
 
     # Load toy data

@@ -30,7 +30,7 @@ test_final_features = lab2.extract_final_features(test_texts, dictionary)
 #-------------------------------------------------------------------------------
 
 # toy_features, toy_labels = utils.load_toy_data('../../Data/toy_data.csv')
-
+#
 # theta, theta_0 = lab2.perceptron(toy_features, toy_labels, T=5)
 
 # utils.plot_toy_results(toy_features, toy_labels, theta, theta_0)

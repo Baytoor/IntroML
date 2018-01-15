@@ -42,8 +42,18 @@ def perceptron(feature_matrix, labels, T=5):
         the average theta and the second element is a real number with the
         value of the average theta_0.
     """
+    current_theta = np.zeros(len(feature_matrix[0]))
+    current_theta_0 = 0
 
-    raise NotImplementedError
+    for t in T:
+        for i in len(labels):
+            if labels[i]*(np.dot(feature_matrix[i],current_theta) +current_theta_0) <= 0:
+                current_theta += feature_matrix[i]*labels[i]
+                current_theta_0 += labels[i]
+
+    return current_theta, current_theta_0
+
+
 
 ### Part 2 - Classifying Reviews
 

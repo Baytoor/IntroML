@@ -19,7 +19,8 @@ def load_reviews_data(reviews_data_path):
 
     data = []
     with open(reviews_data_path) as data_file:
-        for datum in csv.DictReader(data_file, delimiter='\t'):
+        reader = csv.DictReader(data_file)
+        for datum in reader:
             data.append({field: int(value) if field in numeric_fields else value for field, value in datum.items()})
 
     return data
